@@ -1,0 +1,21 @@
+li a {
+  color: green;
+}
+
+.container {
+  margin: 0.2vw;
+}
+
+.rectangle {
+  background: #afa;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 14px;
+  height: 14px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 14px;
+}
