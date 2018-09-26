@@ -13,4 +13,4 @@ class IndexView(generic.ListView):
 
     def get_queryset(self):
         """ Return last 5 post (not including those set for future) """
-        return Post.objects.filter(published_date__lte=timezone.now()).order_by('-pub_date')[:5]
+        return Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')[:5]

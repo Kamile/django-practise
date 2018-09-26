@@ -10,6 +10,21 @@
 
 {% load static %}
 
-<div>
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}">
+<div class="container">
   <h1>Blog</h1>
+  {% if latest_post_list %}
+  <ul>
+    {% for post in latest_post_list %}
+    <li>
+      <h2>{{post.title}}</h2>
+      <p>{{post.text}}</p>
+    </li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p> No posts are available.</p>
+  {% endif %}
 </div>
